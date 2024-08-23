@@ -10,7 +10,7 @@ object g8 extends G8Module {
   override def validationTargets =
     Seq(
       "example.compile",
-      "example.test"
+      "example.test",
       "example.fix"
     )
 }
