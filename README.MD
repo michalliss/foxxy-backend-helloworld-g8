@@ -1,4 +1,4 @@
-# foxxy-backend-helloworld.g8
+# foxxy-backend-hello.g8
 
 Giter8 template for helloworld application using foxxy
 
