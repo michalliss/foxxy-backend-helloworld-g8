@@ -1,7 +1,10 @@
 import mill._
 import mill.scalalib._
 
-object $name$ extends ScalaModule {
+import $ivy.`com.goyeau::mill-scalafix::0.4.0`
+import com.goyeau.mill.scalafix.ScalafixModule
+
+object $name$ extends ScalaModule with ScalafixModule {
 
   def scalaVersion = "3.5.0"
 
