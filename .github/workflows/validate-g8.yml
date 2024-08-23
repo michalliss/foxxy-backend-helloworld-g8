@@ -1,5 +1,5 @@
-name: run-tests
-run-name: Run tests
+name: validate-g8
+run-name: Validate g8 template
 on: [push]
 jobs:
   run-tests:
