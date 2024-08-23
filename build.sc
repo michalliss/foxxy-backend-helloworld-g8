@@ -1,4 +1,6 @@
 import $ivy.`io.chris-kipp::mill-giter8::0.2.7`
+import $ivy.`com.goyeau::mill-scalafix::0.4.0`
+import com.goyeau.mill.scalafix.ScalafixModule
 
 import io.kipp.mill.giter8.G8Module
 import mill._
@@ -8,7 +10,8 @@ object g8 extends G8Module {
   override def validationTargets =
     Seq(
       "example.compile",
-      "example.test"
+      "example.test",
+      "example.fix"
     )
 }
 
