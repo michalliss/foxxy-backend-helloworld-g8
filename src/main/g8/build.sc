@@ -1,7 +1,7 @@
 import mill._
 import mill.scalalib._
 
-import $ivy.`com.goyeau::mill-scalafix::0.4.0`
+import \$ivy.`com.goyeau::mill-scalafix::0.4.0`
 import com.goyeau.mill.scalafix.ScalafixModule
 
 object $name$ extends ScalaModule with ScalafixModule {
