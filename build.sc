@@ -11,7 +11,8 @@ object g8 extends G8Module {
     Seq(
       "example.compile",
       "example.test",
-      "example.fix"
+      "example.fix",
+      "example.reformat"
     )
 }
 
