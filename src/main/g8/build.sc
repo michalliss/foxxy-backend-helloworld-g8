@@ -2,12 +2,13 @@ import mill._
 import mill.scalalib._
 import \$ivy.`com.goyeau::mill-scalafix::0.4.0`
 import com.goyeau.mill.scalafix.ScalafixModule
+import scalafmt._
 
 object config {
   val scalaVersion = "3.5.0"
 }
 
-trait AppScalaModule extends ScalaModule with ScalafixModule {
+trait AppScalaModule extends ScalaModule with ScalafixModule with ScalafmtModule  {
   def scalaVersion  = config.scalaVersion
   def scalacOptions = Seq("-Wunused:all")
 }
