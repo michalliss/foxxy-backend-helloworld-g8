@@ -2,7 +2,7 @@ package $name$
 
 import zio.*
 import zio.test.*
-import foxxy.testing.* 
+import foxxy.testing.*
 import foxxy.backend.*
 import sttp.tapir.DecodeResult.Value
 
@@ -12,7 +12,7 @@ object MainSuite extends ZIOSpecDefault {
         test("Endpoint test"){
             for {
                 response <- TestClient.send(Main.endpointDescription, ())
-            } yield assert(response.match { case Value(v) => v.right.get })(Assertion.equalTo("Hello, World!"))
+            } yield assert(response)(Assertion.isRight(Assertion.equalTo("Hello, World!")))
         }
     ).provide(
         TestClient.startOnFreePort(
