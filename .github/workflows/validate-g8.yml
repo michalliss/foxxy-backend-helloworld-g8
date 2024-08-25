@@ -3,10 +3,10 @@ run-name: Validate g8 template
 on:
   push:
   pull_request:
-    types: [opened]
+    types: [opened, review_requested]
     
 jobs:
-  run-tests:
+  validate-g8:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo
