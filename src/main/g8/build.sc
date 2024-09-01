@@ -21,8 +21,8 @@ object $name$ extends AppScalaModule {
     def ivyDeps = Agg(
       ivy"dev.zio::zio-test:2.1.9",
       ivy"dev.zio::zio-test-sbt:2.1.9",
-      ivy"dev.zio::zio-test-magnolia:2.1.9"
-      ivy"io.github.michalliss::foxxy-testing:0.0.5",
+      ivy"dev.zio::zio-test-magnolia:2.1.9",
+      ivy"io.github.michalliss::foxxy-testing:0.0.5"
     )
   }
 }
